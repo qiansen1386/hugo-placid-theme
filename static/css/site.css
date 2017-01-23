@@ -1,0 +1,70 @@
+/*特大喜讯！CSS大家庭又添新成员*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600italic);
+
+/*先给他换了字体再说，满眼宋体好蛋疼  */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Source Han Sans', 思源黑体, PingFangSC-Regular, 'Hiragino Sans GB', "STHeiti Light", 华文细黑, 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.sidebar {
+  font-size: 0.9rem;
+}
+
+
+/*To fix thd error caused by pre tag*/
+
+.hljs {
+  margin: -1rem;
+}
+
+
+/* See more at: https://www.urbaninsight.com/2013/01/04/improving-html5-app-performance-gpu-accelerated-css-transitions#sthash.BLCZmSMd.dpuf */
+
+canvas.accelerated {
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* 中英文混排的排版简直操心到蛋碎 */
+.post {
+  line-height: 2.5;
+  font-size:16px;
+  letter-spacing: 0.04rem;
+}
+
+@media screen and (min-height: 830px) {
+  html {
+    line-height: 2;
+  }
+}
